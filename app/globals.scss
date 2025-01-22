@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f2f4f7;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f2f4f7;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.overlay {
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .3);
+}

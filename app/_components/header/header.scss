@@ -1,0 +1,46 @@
+.header {
+    justify-content: space-between;
+
+    &__title {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    &__button {
+        background-color: #5CCC81;
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+            background-color: #47b26b;
+
+            & .header__add-icon {
+                background-color: #5CCC81;
+            }
+        }
+    }
+
+    &__add-icon {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        background-color: #47b26b;
+        transition: background-color .3s ease-in-out;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: calc(50% - 5px);
+            top: calc((100% - 1px) / 2);
+            width: 10px;
+            height: 1px;
+            background-color: #fff;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+}

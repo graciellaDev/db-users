@@ -1,0 +1,51 @@
+.list-users {
+    grid-template-columns: 1fr repeat(5, auto);
+    position: relative;
+    top: -20px;
+    margin-bottom: -56px;
+    padding: 10px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -68px;
+        z-index: -1;
+        width: 100%;
+        height: 118px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    
+    &__btn {
+        width: 34px;
+        height: 34px;
+        border-radius: 6px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__sort {
+        gap: 20px;
+        margin-bottom: 45px;
+        padding-left: 10px;
+        padding-left: 10px;
+        color: #42474d;
+    }
+
+    &__edit {
+        gap: 6px
+    }
+
+    &__name {
+        gap: 10px;
+    }
+
+    &__item {
+        min-height: 72px;
+        padding: 14px 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #dae3f1;
+    }
+}

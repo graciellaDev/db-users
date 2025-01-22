@@ -1,0 +1,17 @@
+.sort {
+    grid-template-columns: 1fr repeat(5, auto);
+
+    &__item {
+        gap: 20px;
+        color: #42474d;
+
+        &_null {
+            width: 74px;
+        }
+    }
+
+    &__value {
+        font-weight: 400;
+        color: #828d99;
+    }
+}

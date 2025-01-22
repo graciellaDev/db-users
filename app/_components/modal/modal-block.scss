@@ -1,0 +1,47 @@
+.modal {
+    &__block {
+        align-items: center;
+        justify-content: center;
+        max-width: 383px;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 18px;
+        color: #42474d;
+        background-color: #fff;
+    }
+
+    &__icon {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 4px;
+    }
+
+    &__text-big {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__buttons {
+        gap: 10px;
+    }
+
+    &__button {
+        padding: 13px;
+        border-radius: 16px;
+        flex-grow: 1;
+
+        &_delete {
+            color: #fff;
+            background-color: #ff4a33;
+        }
+
+        &_cancel {
+            color: #e5432e;
+            background-color: #ffe9e5;
+        }
+    }
+}
